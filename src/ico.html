@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>GraICO</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <h1>Welcome to Gray's ICO</h1>
+
+    <h2>ICO will end in ...</h2>
+    <h3 id="time"></h3>
+
+    <h2>Our rate</h2>
+    <h3 id="rate"></h3>
+
+    <h2>We raised</h2>
+    <h3 id="raised"></h3>
+
+    <form>
+      <label for="name">What should i call you?</label><br>
+      <input type="text" name="name" placeholder="Name" id="name"><br><br>
+
+      <label for="amount">Fund me!!!</label><br>
+      <input type="number" name="amount" placeholder="Amount" id="amount">
+
+      <select name="unit" id="unit">
+        <option value="wei">Wei (1000000000000000000 Wei = 1 Ether)</option>
+        <option value="kwei">Kwei, Ada, Femtoether (1000000000000000 Kwei = 1 Ether)</option>
+        <option value="mwei">Mwei, Babbage, Picoether (1000000000000 Mwei = 1 Ether)</option>
+        <option value="gwei">Gwei, Shannon, Nanoether, Nano (1000000000 Gwei = 1 Ether)</option>
+        <option value="szabo">Szabo, Microether,Micro (1000000 Szabo = 1 Ether)</option>
+        <option value="finney">Finney, Milliether,Milli (1000 Finney = 1 Ether)</option>
+        <option value="ether">Ether</option>
+        <option value="kether">Kether, Grand,Einstein (1 Kether = 1000 Ether)</option>
+        <option value="mether">Mether (1 Mether = 1000000 Ether)</option>
+        <option value="gether">Gether (1 Gether = 1000000000 Ether)</option>
+        <option value="teher">Tether (1 Tether = 1000000000000 Ether)</option>
+      </select>
+
+      <button type="button" onclick="App.fund()">Fund now!</button><br><br>
+    </form>
+
+    <h3 id="message"></h3>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/ico.js"></script>
+  </body>
+</html>
