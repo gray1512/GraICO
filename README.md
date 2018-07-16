@@ -1,4 +1,4 @@
-# A basic ICO (Initial Coin Offering) website
+# An ICO (Initial Coin Offering) website
 
 # GraCoin
 Type: ERC20 Token <br />
